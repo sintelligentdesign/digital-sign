@@ -9,14 +9,14 @@ var minutes = d.getMinutes()
 
 /// Clock
 function updateClock() {
-    minutes = (minutes < 10 ? "0" : "") + minutes
+    minutesString = (minutes < 10 ? "0" : "") + minutes
 
-    hours = (hours > 12) ? hours - 12: hours
-    hours = (hours == 0) ? 12 : hours
+    hoursString = (hours > 12) ? hours - 12: hours
+    hoursString = (hours == 0) ? 12 : hours
 
-    var meridian = (hours < 12) ? "am" : "pm"
+    var meridian = (hoursString < 12) ? "am" : "pm"
 
-    var timeString = hours + ":" + minutes + " " + meridian
+    var timeString = hoursString + ":" + minutesString + " " + meridian
 
     document.getElementById("time").innerHTML = timeString
 }
@@ -34,11 +34,13 @@ function updateGreeting() {
     if (hours < 12) {
         document.getElementById("greeting").innerHTML = "good morning"
     }
-    if (hours > 12 < 18) {
-        document.getElementById("greeting").innerHTML = "good afternoon"
-    }
-    if (hours > 17) {
-        document.getElementById("greeting").innerHTML = "good evening"
+    if (hours > 12) {
+        if (hours < 17) {
+            document.getElementById("greeting").innerHTML = "good afternoon"
+        }
+        else {
+            document.getElementById("greeting").innerHTML = "good evening"
+        }
     }
 }
 
