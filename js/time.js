@@ -1,6 +1,6 @@
 /// Clock
 function updateClock() {
-    var d = new Date();
+    var d = new Date()
     var hours = d.getHours()
     var minutes = d.getMinutes()
     
@@ -18,7 +18,7 @@ function updateClock() {
 
 /// Date
 function updateDate() {
-    var d = new Date();
+    var d = new Date()
     var date = d.getDate()
     var month = d.getMonth()
     var day = d.getDay()
@@ -31,7 +31,7 @@ function updateDate() {
 
 /// Greeting
 function updateGreeting() {
-    var d = new Date();
+    var d = new Date()
     var hours = d.getHours()
 
     if (hours < 12) {
