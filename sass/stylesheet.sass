@@ -1,33 +1,64 @@
+@import 'compass'
+@import 'compass/reset'
+
 $text-size-large: 10em
-$text-size-medium: 5em
+$text-size-medium: 4em
 $text-size-small: 3em
 
+$de-emph-opacity: 0.6
+
 body
-    background-color: black
+    background-color: hsl(190, 60%, 20%)
     color: white
     text-transform: lowercase
 
+// COMPONENT Grid System
+
 #container
     font-family: 'Helvetica Neue', sans-serif
-    font-weight: 300
-    text-align: right
+    font-weight: 500
+    width: 100%
+    clear: both
 
-#time
-    font-size: $text-size-large
-    line-height: 0.8em
-    margin-top: 1rem
+.component-medium
+    width: 50%
+    height: 20rem
+    background-color: hsl(190, 60%, 40%)
+    float: left
 
-#date
-    font-size: $text-size-medium
+.component-small
+    width: 25%
+    height: 20rem
+    background-color: hsl(190, 60%, 30%)
+    float: left
 
-#greeting
-    font-size: $text-size-small
+// Component styles
+#time-and-date
+    text-align: center
+    margin: auto
+
+    #time
+        font-size: $text-size-large
+        font-weight: 800
+        margin-top: 0.5rem
+
+    #date
+        font-size: $text-size-medium
+
+    #greeting
+        font-size: $text-size-small
+        margin-top: 0.5rem
+        opacity: $de-emph-opacity
 
 #weather
-    margin-top: 5rem
+    text-align: center
+    margin: auto
 
-#weather-temp
-    font-size: $text-size-medium
+    #weather-temp
+        font-size: $text-size-medium
+        font-weight: 800
+        margin-top: 6rem
 
-#weather-highLow
-    font-size: $text-size-small
+    #weather-highLow
+        font-size: $text-size-small
+        opacity: $de-emph-opacity
