@@ -1,4 +1,3 @@
-/// Date/time setup
 var d = new Date();
 
 var date = d.getDate()
