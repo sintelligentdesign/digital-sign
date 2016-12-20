@@ -1,13 +1,9 @@
-var d = new Date();
-
-var date = d.getDate()
-var month = d.getMonth()
-var day = d.getDay()
-var hours = d.getHours()
-var minutes = d.getMinutes()
-
 /// Clock
 function updateClock() {
+    var d = new Date();
+    var hours = d.getHours()
+    var minutes = d.getMinutes()
+    
     minutesString = (minutes < 10 ? "0" : "") + minutes
 
     hoursString = (hours > 12) ? hours - 12: hours
@@ -22,6 +18,11 @@ function updateClock() {
 
 /// Date
 function updateDate() {
+    var d = new Date();
+    var date = d.getDate()
+    var month = d.getMonth()
+    var day = d.getDay()
+
     var weekdayString = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
     var monthString = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
 
@@ -30,6 +31,9 @@ function updateDate() {
 
 /// Greeting
 function updateGreeting() {
+    var d = new Date();
+    var hours = d.getHours()
+
     if (hours < 12) {
         document.getElementById("greeting").innerHTML = "good morning"
     }
