@@ -19,22 +19,24 @@ body
     width: 100%
     clear: both
 
+[class*="component"]
+    height: 20rem
+    float: left
+
+.component-large
+    width: 100%
+
 .component-medium
     width: 50%
-    height: 20rem
-    background-color: hsl(320, 60%, 40%)
-    float: left
 
 .component-small
     width: 25%
-    height: 20rem
-    background-color: hsl(320, 60%, 30%)
-    float: left
 
 // Component styles
 #time-and-date
     text-align: center
     margin: auto
+    background-color: hsl(320, 60%, 40%)
 
     #time
         font-size: $text-size-large
@@ -52,12 +54,14 @@ body
 #weather
     text-align: center
     margin: auto
+    background-color: hsl(320, 60%, 30%)
 
     #weather-temp
         font-size: $text-size-medium
         font-weight: 800
-        margin-top: 6rem
+        margin-top: 5.5rem
 
     #weather-highLow
         font-size: $text-size-small
+        margin-top: 1rem
         opacity: $de-emph-opacity
