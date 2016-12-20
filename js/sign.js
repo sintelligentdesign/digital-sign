@@ -7,14 +7,6 @@ var day = d.getDay()
 var hours = d.getHours()
 var minutes = d.getMinutes()
 
-/// Greeting
-if (hours < 12) {
-    document.getElementById("greeting").innerHTML = "good morning"
-}
-if (hours > 12) {
-    document.getElementById("greeting").innerHTML = "good afternoon"
-}
-
 /// Clock
 function updateClock() {
     minutes = (minutes < 10 ? "0" : "") + minutes
@@ -37,9 +29,25 @@ function updateDate() {
     document.getElementById("date").innerHTML = weekdayString[day] + " " + monthString[month] + " " + date
 }
 
+/// Greeting
+function updateGreeting() {
+    if (hours < 12) {
+        document.getElementById("greeting").innerHTML = "good morning"
+    }
+    if (hours > 12 < 18) {
+        document.getElementById("greeting").innerHTML = "good afternoon"
+    }
+    if (hours > 17) {
+        document.getElementById("greeting").innerHTML = "good evening"
+    }
+}
+
 function main() {
     updateClock()
     updateDate()
+    updateGreeting()
+    
     setInterval(updateClock, 1000)
     setInterval(updateDate, 1000)
+    setInterval(updateGreeting, 1000)
 }
