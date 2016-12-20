@@ -2,7 +2,7 @@
     <title>Digital Sign</title>
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
 </head>
-<body onload="main()">
+<body>
     <div id="container">
         <div id="time"></div>
         <div id="date"></div>
@@ -19,4 +19,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
     <script src="./js/jquery.simpleWeather.js" type="text/javascript"></script>
     <script src="./js/weather.js" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(function() {
+            updateClock()
+            updateDate()
+            updateGreeting()
+            updateWeather()
+            
+            setInterval(updateClock, 1000)
+            setInterval(updateDate, 600000)
+            setInterval(updateGreeting, 600000)
+            setInterval(updateWeather, 600000)
+        });
+    </script>
 </body>

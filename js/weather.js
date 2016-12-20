@@ -1,8 +1,3 @@
-$(document).ready(function() {  
-    updateWeather()
-    setInterval(updateWeather, 600000)
-});
-
 function updateWeather() {
     $.simpleWeather({
         location: '17603',

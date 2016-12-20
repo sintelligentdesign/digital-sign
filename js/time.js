@@ -42,13 +42,3 @@ function updateGreeting() {
         }
     }
 }
-
-function main() {
-    updateClock()
-    updateDate()
-    updateGreeting()
-    
-    setInterval(updateClock, 1000)
-    setInterval(updateDate, 600000)
-    setInterval(updateGreeting, 600000)
-}
