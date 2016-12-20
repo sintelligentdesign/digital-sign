@@ -49,6 +49,6 @@ function main() {
     updateGreeting()
     
     setInterval(updateClock, 1000)
-    setInterval(updateDate, 1000)
-    setInterval(updateGreeting, 1000)
+    setInterval(updateDate, 600000)
+    setInterval(updateGreeting, 600000)
 }

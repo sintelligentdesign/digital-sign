@@ -8,12 +8,33 @@
         <div id="date"></div>
         <div id="greeting"></div>
 
-        <div id="forecast">
-            <div id="forecast-temperature"></div>
-            <div id="forecast-condition"></div>
-            <div id="forecast-5day"></div>
-        </div>
+        <div id="weather"></div>
     </div>
 
     <script src="./js/time.js" type="text/javascript"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/jquery.simpleWeather.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function() {  
+            updateWeather()
+            setInterval(updateWeather, 600000)
+        });
+
+        function updateWeather() {
+        $.simpleWeather({
+            location: '17603',
+            unit: 'f',
+            success: function(weather) {
+                html = "<div id='weather-temp'>" + weather.temp + '&deg;' + " " + weather.currently + "</div>"
+                html += "<div id='weather-highLow'>" + weather.high + '&deg;' + ":" + weather.low + '&deg;' + "</div>"
+            
+                $("#weather").html(html);
+            },
+            error: function(error) {
+                $("#weather").html('<p>'+error+'</p>')
+            }
+        });
+        }
+    </script>
 </body>
