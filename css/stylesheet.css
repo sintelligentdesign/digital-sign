@@ -1,1 +1,1 @@
-@font-face{font-family:'PLZ';src:url("../fonts/plz-webfont.woff2") format("woff2"),url("../fonts/plz-webfont.woff") format("woff");font-weight:normal;font-style:normal}#container{font-family:'PLZ', sans-serif}
+body{background-color:black;color:white}#container{font-family:'Helvetica Neue', sans-serif;font-weight:300;text-align:right}#time{font-size:10em}#date{font-size:5em}#greeting{font-size:3em}
