@@ -48,6 +48,7 @@ body
         margin-top: 0.5rem
 
     #date
+        margin-top: 1rem
         font-size: $text-size-medium
 
 #weather
@@ -73,12 +74,16 @@ body
 
         .feed-item-title
             font-size: $text-size-tiny
+
             & + .feed-item-title
                 margin-top: 1.5rem
+
             a
                 color: white
-                opacity: $de-emph-opacity
                 text-decoration: none
+
+            &:nth-child(2), &:nth-child(4)
+                opacity: $de-emph-opacity
 
     .rss2html-note, .rss2html-note-clear
         display: none
