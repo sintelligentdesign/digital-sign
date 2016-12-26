@@ -2,7 +2,7 @@
     <title>Digital Sign</title>
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
 </head>
-<body>
+<body onload="updateClock(); setInterval('updateClock()', 1000 )">
     <div id="container">
         <div id="time-and-date" class="component-medium">
             <div id="time">12:00 am</div>
@@ -27,11 +27,9 @@
 
     <script>
         $(document).ready(function() {
-            updateClock()
             updateDate()
             updateWeather()
             
-            setInterval(updateClock(), 1000)
             setInterval(updateDate(), 600000)
             setInterval(updateWeather(), 600000)
         });
