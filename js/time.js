@@ -4,16 +4,23 @@ function updateClock() {
     var hours = d.getHours()
     var minutes = d.getMinutes()
     
-    minutesString = (minutes < 10 ? "0" : "") + minutes
+    var hoursString = new String
+    var minutesString = new String
+    var meridian = new String
 
-    hoursString = (hours > 12) ? hours - 12: hours
-    hoursString = (hours == 0) ? 12 : hours
+    if (hours > 12) {
+        hoursString = hours - 12
+    } else {
+        hoursString = hours
+    }
 
-    var meridian = (hoursString < 12) ? "am" : "pm"
+    if (hours < 12) {
+        meridian = "am"
+    } else {
+        meridian = "pm"
+    }
 
-    var timeString = hoursString + ":" + minutesString + " " + meridian
-
-    document.getElementById("time").innerHTML = timeString
+    document.getElementById("time").innerHTML = hoursString + ":" + (minutes < 10 ? "0" : "") + minutes + " " + meridian
 }
 
 /// Date
