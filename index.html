@@ -2,7 +2,17 @@
     <title>Digital Sign</title>
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
 </head>
-<body onload="updateClock(); setInterval('updateClock()', 1000 )">
+<body 
+    onload="
+        updateClock(); 
+        updateDate();
+        updateWeather();
+
+        setInterval('updateClock()', 1000);
+        setInterval(updateDate(), 600000);
+        setInterval(updateWeather(), 600000);
+    "
+>
     <div id="container">
         <div id="time-and-date" class="component-medium">
             <div id="time">12:00 am</div>
@@ -15,7 +25,7 @@
         </div>
 
         <div id="news" class="component-large">
-            <script id="feed-1482720214258822" type="text/javascript" src="http://rss.bloople.net/?url=http%3A%2F%2Fwww.nytimes.com%2Fservices%2Fxml%2Frss%2Fnyt%2FHomePage.xml&detail=-1&limit=5&showtitle=false&type=js&id=1482720214258822"></script>
+            <script id="feed-1482779234933593" type="text/javascript" src="http://rss.bloople.net/?url=http%3A%2F%2Ffeeds.bbci.co.uk%2Fnews%2Fworld%2Fus_and_canada%2Frss.xml%23&detail=-1&limit=5&showtitle=false&type=js&id=1482779234933593"></script>
         </div>
     </div>
 
@@ -24,14 +34,4 @@
 
     <script src="./js/time.js" type="text/javascript"></script>
     <script src="./js/weather.js" type="text/javascript"></script>
-
-    <script>
-        $(document).ready(function() {
-            updateDate()
-            updateWeather()
-            
-            setInterval(updateDate(), 600000)
-            setInterval(updateWeather(), 600000)
-        });
-    </script>
 </body>
