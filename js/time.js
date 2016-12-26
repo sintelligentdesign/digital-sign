@@ -8,8 +8,10 @@ function updateClock() {
     var minutesString = new String
     var meridian = new String
 
-    if (hours > 12) {
+    if (hours > 11) {
         hoursString = hours - 12
+    } else if (hours = 0) {
+        hoursString = 12
     } else {
         hoursString = hours
     }
