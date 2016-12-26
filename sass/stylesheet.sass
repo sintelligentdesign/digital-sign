@@ -4,8 +4,12 @@
 $text-size-large: 10em
 $text-size-medium: 4em
 $text-size-small: 3em
+$text-size-tiny: 1.5em
 
 $de-emph-opacity: 0.6
+
+$color-1: hsl(320, 60%, 40%)
+$color-2: hsl(320, 60%, 30%)
 
 body
     background-color: hsl(320, 60%, 20%)
@@ -20,11 +24,11 @@ body
     clear: both
 
 [class*="component"]
-    height: 20rem
+    height: 33.33%
     float: left
 
 .component-large
-    width: 100%
+    width: 75%
 
 .component-medium
     width: 50%
@@ -36,7 +40,7 @@ body
 #time-and-date
     text-align: center
     margin: auto
-    background-color: hsl(320, 60%, 40%)
+    background-color: $color-1
 
     #time
         font-size: $text-size-large
@@ -46,22 +50,35 @@ body
     #date
         font-size: $text-size-medium
 
-    #greeting
-        font-size: $text-size-small
-        margin-top: 0.5rem
-        opacity: $de-emph-opacity
-
 #weather
     text-align: center
     margin: auto
-    background-color: hsl(320, 60%, 30%)
+    background-color: $color-2
 
     #weather-temp
         font-size: $text-size-medium
         font-weight: 800
-        margin-top: 5.5rem
+        margin-top: 4.5rem
 
     #weather-highLow
         font-size: $text-size-small
         margin-top: 1rem
         opacity: $de-emph-opacity
+
+#news
+    background-color: $color-1
+
+    div
+        padding: 1.8rem
+
+        .feed-item-title
+            font-size: $text-size-tiny
+            & + .feed-item-title
+                margin-top: 1.5rem
+            a
+                color: white
+                opacity: $de-emph-opacity
+                text-decoration: none
+
+    .rss2html-note, .rss2html-note-clear
+        display: none

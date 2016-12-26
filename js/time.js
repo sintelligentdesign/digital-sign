@@ -35,21 +35,3 @@ function updateDate() {
 
     document.getElementById("date").innerHTML = weekdayString[day] + " " + monthString[month] + " " + date
 }
-
-/// Greeting
-function updateGreeting() {
-    var d = new Date()
-    var hours = d.getHours()
-
-    if (hours < 12) {
-        document.getElementById("greeting").innerHTML = "good morning"
-    }
-    if (hours > 12) {
-        if (hours < 17) {
-            document.getElementById("greeting").innerHTML = "good afternoon"
-        }
-        else {
-            document.getElementById("greeting").innerHTML = "good evening"
-        }
-    }
-}
