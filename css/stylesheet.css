@@ -148,38 +148,50 @@ body {
 }
 
 /* line 73, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#news {
+#love {
+  font-size: 10em;
   background-color: #a3297a;
+  text-align: center;
 }
 
-/* line 76, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 77, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+#love p {
+  margin-top: 4rem;
+}
+
+/* line 80, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+#news {
+  background-color: #7a1f5c;
+}
+
+/* line 83, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news div {
   padding: 2.3rem;
 }
 
-/* line 79, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 86, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news div .feed-item-title {
   font-size: 1.5em;
   text-align: right;
 }
 
-/* line 83, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 90, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news div .feed-item-title + .feed-item-title {
   margin-top: 1.5rem;
 }
 
-/* line 86, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 93, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news div .feed-item-title a {
   color: white;
   text-decoration: none;
 }
 
-/* line 90, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 97, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news div .feed-item-title:nth-child(2), #news div .feed-item-title:nth-child(4) {
   opacity: 0.6;
 }
 
-/* line 93, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 100, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news .rss2html-note, #news .rss2html-note-clear {
   display: none;
 }
