@@ -129,50 +129,57 @@ body {
 
 /* line 59, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #weather #weather-temp {
-  font-size: 4em;
+  font-size: 10em;
   font-weight: 800;
-  margin-top: 4.5rem;
+  margin-top: 1rem;
 }
 
 /* line 64, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#weather #weather-highLow {
+#weather #weather-condition {
   font-size: 3em;
+  font-weight: 800;
+}
+
+/* line 68, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+#weather #weather-highLow {
+  font-size: 1.5em;
   margin-top: 1rem;
   opacity: 0.6;
 }
 
-/* line 69, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 73, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news {
   background-color: #a3297a;
 }
 
-/* line 72, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 76, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news div {
-  padding: 1.8rem;
+  padding: 2.3rem;
 }
 
-/* line 75, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 79, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news div .feed-item-title {
   font-size: 1.5em;
+  text-align: right;
 }
 
-/* line 78, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 83, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news div .feed-item-title + .feed-item-title {
   margin-top: 1.5rem;
 }
 
-/* line 81, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 86, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news div .feed-item-title a {
   color: white;
   text-decoration: none;
 }
 
-/* line 85, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 90, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news div .feed-item-title:nth-child(2), #news div .feed-item-title:nth-child(4) {
   opacity: 0.6;
 }
 
-/* line 88, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 93, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news .rss2html-note, #news .rss2html-note-clear {
   display: none;
 }
