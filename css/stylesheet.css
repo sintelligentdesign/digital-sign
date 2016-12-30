@@ -109,7 +109,7 @@ body {
 
 /* line 45, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #time-and-date #time {
-  font-size: 10em;
+  font-size: 9em;
   font-weight: 800;
   margin-top: 0.5rem;
 }
@@ -117,7 +117,7 @@ body {
 /* line 50, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #time-and-date #date {
   margin-top: 1rem;
-  font-size: 4em;
+  font-size: 3.5em;
 }
 
 /* line 54, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
@@ -129,27 +129,27 @@ body {
 
 /* line 59, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #weather #weather-temp {
-  font-size: 10em;
+  font-size: 9em;
   font-weight: 800;
   margin-top: 1rem;
 }
 
 /* line 64, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #weather #weather-condition {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 800;
 }
 
 /* line 68, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #weather #weather-highLow {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-top: 1rem;
   opacity: 0.6;
 }
 
 /* line 73, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #love {
-  font-size: 10em;
+  font-size: 9em;
   background-color: #a3297a;
   text-align: center;
 }
@@ -171,7 +171,7 @@ body {
 
 /* line 86, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news div .feed-item-title {
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: right;
 }
 
