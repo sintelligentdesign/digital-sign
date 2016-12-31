@@ -17,12 +17,12 @@ function updateClock() {
     }
 
     if (hours < 12) {
-        meridian = "am"
+        meridian = "AM"
     } else {
-        meridian = "pm"
+        meridian = "PM"
     }
 
-    document.getElementById("time").innerHTML = hoursString + ":" + (minutes < 10 ? "0" : "") + minutes + " " + meridian
+    document.getElementById("time").innerHTML = hoursString + ":" + (minutes < 10 ? "0" : "") + minutes + "<span class='meridian'>" + meridian + "</span>"
 }
 
 /// Date
@@ -32,8 +32,8 @@ function updateDate() {
     var month = d.getMonth()
     var day = d.getDay()
 
-    var weekdayString = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
-    var monthString = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
+    var weekdayString = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    var monthString = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
-    document.getElementById("date").innerHTML = weekdayString[day] + " " + monthString[month] + " " + date
+    document.getElementById("date").innerHTML = weekdayString[day] + ", " + monthString[month] + " " + date
 }

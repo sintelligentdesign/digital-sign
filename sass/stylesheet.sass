@@ -1,10 +1,10 @@
 @import 'compass'
 @import 'compass/reset'
 
-$text-size-large: 9em
-$text-size-medium: 3.5em
-$text-size-small: 2.5em
-$text-size-tiny: 1.3em
+$text-size-large: 9rem
+$text-size-medium: 3.5rem
+$text-size-small: 2.5rem
+$text-size-tiny: 1.3rem
 
 $de-emph-opacity: 0.6
 
@@ -12,80 +12,44 @@ $color-1: hsl(320, 60%, 40%)
 $color-2: hsl(320, 60%, 30%)
 
 body
-    background-color: hsl(320, 60%, 20%)
+    background-color: black
     color: white
-    text-transform: lowercase
+    font-family: "Helvetica Neue", "Helvetica", sans-serif //until I can find something better
 
-// COMPONENT Grid System
-#container
-    font-family: 'Helvetica Neue', sans-serif
-    font-weight: 500
-    width: 100%
-    clear: both
-
-[class*="component"]
-    height: 33.33%
-    float: left
-
-.component-large
-    width: 75%
-
-.component-medium
-    width: 50%
-
-.component-small
-    width: 25%
-
-// Component styles
 #time-and-date
-    text-align: center
-    margin: auto
-    background-color: $color-1
-
     #time
+        margin-top: -1rem
         font-size: $text-size-large
-        font-weight: 800
-        margin-top: 0.5rem
+        font-weight: 200
+        .meridian
+            margin-left: 1rem
+            font-size: $text-size-medium
+            font-weight: 300
 
     #date
         margin-top: 1rem
         font-size: $text-size-medium
+        font-weight: 300
 
 #weather
-    text-align: center
-    margin: auto
-    background-color: $color-2
-
     #weather-temp
         font-size: $text-size-large
-        font-weight: 800
         margin-top: 1rem
 
     #weather-condition
         font-size: $text-size-small
-        font-weight: 800
 
     #weather-highLow
         font-size: $text-size-tiny
         margin-top: 1rem
         opacity: $de-emph-opacity
 
-#love
-    font-size: $text-size-large
-    background-color: $color-1
-    text-align: center
-    p
-        margin-top: 4rem
-
 #news
-    background-color: $color-2
-
     div
         padding: 2.3rem
 
         .feed-item-title
             font-size: $text-size-tiny
-            text-align: right
 
             & + .feed-item-title
                 margin-top: 1.5rem
