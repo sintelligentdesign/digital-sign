@@ -7,10 +7,12 @@ onload="
     updateClock(); 
     updateDate();
     updateWeather();
+    updateNews();
 
     setInterval('updateClock()', 1000);
     setInterval(updateDate(), 600000);
     setInterval(updateWeather(), 600000);
+    setInterval(updateNews(), 1200000);
 ">
         <div id="time-and-date">
             <div id="time">12:00<span class="meridian">AM</span></div>
@@ -18,13 +20,14 @@ onload="
         </div>
 
         <div id="weather">
-            <div id="weather-temp">0&deg;</div>
-            <div id="weather-condition">clear</div>
+            <span id="weather-temp">0&deg;</span>
+            <span id="weather-condition">clear</span>
             <div id="weather-highLow">0&deg; - 0&deg;</div>
         </div>
 
         <div id="news">
-            <script id="feed-1482779234933593" type="text/javascript" src="http://rss.bloople.net/?url=http%3A%2F%2Ffeeds.bbci.co.uk%2Fnews%2Fworld%2Fus_and_canada%2Frss.xml%23&detail=-1&limit=5&showtitle=false&type=js&id=1482779234933593"></script>
+            <div id="news-title">Top Stories</div>
+            <div id="news-ticker">Loading...</div>
         </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
@@ -32,4 +35,5 @@ onload="
 
     <script src="./js/time.js" type="text/javascript"></script>
     <script src="./js/weather.js" type="text/javascript"></script>
+    <script src="./js/news.js" type="text/javascript"></script>
 </body>
