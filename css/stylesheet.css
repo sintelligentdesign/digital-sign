@@ -64,136 +64,83 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 14, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 11, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 body {
-  background-color: #52143d;
-  color: white;
-  text-transform: lowercase;
+  background-color: black;
+  color: black;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
 }
 
-/* line 20, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 16, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #container {
-  font-family: 'Helvetica Neue', sans-serif;
-  font-weight: 500;
-  width: 100%;
-  clear: both;
+  background-color: white;
+  margin-right: 4rem;
+  padding: 3rem 3rem 0 3rem;
+  height: 70%;
 }
 
-/* line 26, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-[class*="component"] {
-  height: 33.33%;
-  float: left;
-}
-
-/* line 30, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-.component-large {
-  width: 75%;
-}
-
-/* line 33, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-.component-medium {
-  width: 50%;
-}
-
-/* line 36, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-.component-small {
-  width: 25%;
-}
-
-/* line 40, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#time-and-date {
-  text-align: center;
-  margin: auto;
-  background-color: #a3297a;
-}
-
-/* line 45, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#time-and-date #time {
-  font-size: 10em;
-  font-weight: 800;
-  margin-top: 0.5rem;
-}
-
-/* line 50, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#time-and-date #date {
-  margin-top: 1rem;
-  font-size: 4em;
-}
-
-/* line 54, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#weather {
-  text-align: center;
-  margin: auto;
-  background-color: #7a1f5c;
-}
-
-/* line 59, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#weather #weather-temp {
-  font-size: 10em;
-  font-weight: 800;
-  margin-top: 1rem;
-}
-
-/* line 64, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#weather #weather-condition {
-  font-size: 3em;
-  font-weight: 800;
-}
-
-/* line 68, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#weather #weather-highLow {
-  font-size: 1.5em;
-  margin-top: 1rem;
-  opacity: 0.6;
-}
-
-/* line 73, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#love {
-  font-size: 10em;
-  background-color: #a3297a;
-  text-align: center;
-}
-
-/* line 77, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#love p {
-  margin-top: 4rem;
-}
-
-/* line 80, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#news {
-  background-color: #7a1f5c;
-}
-
-/* line 83, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#news div {
-  padding: 2.3rem;
-}
-
-/* line 86, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#news div .feed-item-title {
-  font-size: 1.5em;
+/* line 22, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+#right-container {
+  float: right;
   text-align: right;
 }
 
-/* line 90, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#news div .feed-item-title + .feed-item-title {
-  margin-top: 1.5rem;
+/* line 27, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+#time-and-date #time {
+  font-size: 3.5rem;
+  font-weight: 600;
 }
 
-/* line 93, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#news div .feed-item-title a {
-  color: white;
-  text-decoration: none;
+/* line 30, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+#time-and-date #time .meridian {
+  margin-left: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
-/* line 97, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#news div .feed-item-title:nth-child(2), #news div .feed-item-title:nth-child(4) {
-  opacity: 0.6;
+/* line 35, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+#time-and-date #date {
+  margin-top: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
-/* line 100, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#news .rss2html-note, #news .rss2html-note-clear {
-  display: none;
+/* line 41, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+#weather #weather-temp {
+  font-size: 9rem;
+  font-weight: 900;
+}
+
+/* line 45, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+#weather #weather-condition {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* line 49, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+#weather #weather-highLow {
+  margin-top: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+/* line 54, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+#news {
+  margin-top: 3rem;
+  width: 80%;
+}
+
+/* line 57, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+#news #news-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* line 61, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+#news #news-items div {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=../css/stylesheet.map */

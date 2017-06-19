@@ -1,101 +1,64 @@
 @import 'compass'
 @import 'compass/reset'
 
-$text-size-large: 10em
-$text-size-medium: 4em
-$text-size-small: 3em
-$text-size-tiny: 1.5em
+$text-size-large: 9rem
+$text-size-medium: 3.5rem
+$text-size-small: 2.5rem
+$text-size-tiny: 1.8rem
 
 $de-emph-opacity: 0.6
 
-$color-1: hsl(320, 60%, 40%)
-$color-2: hsl(320, 60%, 30%)
-
 body
-    background-color: hsl(320, 60%, 20%)
-    color: white
-    text-transform: lowercase
+    background-color: black
+    color: black
+    font-family: "Helvetica Neue", "Helvetica", sans-serif //until I can find something better
 
-// COMPONENT Grid System
 #container
-    font-family: 'Helvetica Neue', sans-serif
-    font-weight: 500
-    width: 100%
-    clear: both
+    background-color: white
+    margin-right: 4rem
+    padding: 3rem 3rem 0 3rem
+    height: 70%
 
-[class*="component"]
-    height: 33.33%
-    float: left
+#right-container
+    float: right
+    text-align: right
 
-.component-large
-    width: 75%
-
-.component-medium
-    width: 50%
-
-.component-small
-    width: 25%
-
-// Component styles
 #time-and-date
-    text-align: center
-    margin: auto
-    background-color: $color-1
-
     #time
-        font-size: $text-size-large
-        font-weight: 800
-        margin-top: 0.5rem
+        font-size: $text-size-medium
+        font-weight: 600
+        .meridian
+            margin-left: 1rem
+            font-size: $text-size-small
+            font-weight: 600
 
     #date
-        margin-top: 1rem
-        font-size: $text-size-medium
+        margin-top: 0.5rem
+        font-size: $text-size-small
+        font-weight: 400
 
 #weather
-    text-align: center
-    margin: auto
-    background-color: $color-2
-
     #weather-temp
         font-size: $text-size-large
-        font-weight: 800
-        margin-top: 1rem
+        font-weight: 900
 
     #weather-condition
         font-size: $text-size-small
-        font-weight: 800
+        font-weight: 600
 
     #weather-highLow
-        font-size: $text-size-tiny
-        margin-top: 1rem
-        opacity: $de-emph-opacity
-
-#love
-    font-size: $text-size-large
-    background-color: $color-1
-    text-align: center
-    p
-        margin-top: 4rem
+        margin-top: 0.5rem
+        font-size: $text-size-small
+        font-weight: 400
 
 #news
-    background-color: $color-2
-
-    div
-        padding: 2.3rem
-
-        .feed-item-title
-            font-size: $text-size-tiny
-            text-align: right
-
-            & + .feed-item-title
-                margin-top: 1.5rem
-
-            a
-                color: white
-                text-decoration: none
-
-            &:nth-child(2), &:nth-child(4)
-                opacity: $de-emph-opacity
-
-    .rss2html-note, .rss2html-note-clear
-        display: none
+    margin-top: 3rem
+    width: 80%
+    #news-title
+        font-size: $text-size-small
+        font-weight: 600
+        
+    #news-items div
+        margin-top: 1rem
+        font-size: $text-size-tiny
+        font-weight: 400
