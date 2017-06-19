@@ -9,27 +9,29 @@ $text-size-tiny: 1.3rem
 $de-emph-opacity: 0.6
 
 body
-    text-align: right
-    margin: 3rem 5rem 0 0
     background-color: white
     color: black
     font-family: "Helvetica Neue", "Helvetica", sans-serif //until I can find something better
 
 #time-and-date
+    float: right
+    text-align: right
+    margin: 3rem 5rem 0 0
     #time
-        margin-top: -1rem
-        font-size: $text-size-large
-        font-weight: 900
+        font-size: $text-size-medium
+        font-weight: 600
         .meridian
             margin-left: 1rem
             font-size: $text-size-small
             font-weight: 600
 
     #date
+        margin-top: 0.5rem
         font-size: $text-size-small
-        font-weight: 600
+        font-weight: 400
 
 #weather
+    display: none
     margin-top: 5rem
     #weather-temp
         font-size: $text-size-large
@@ -45,6 +47,7 @@ body
         margin-top: 1rem
 
 #news
+    display: none
     margin-top: 5rem
 
     #news-title
