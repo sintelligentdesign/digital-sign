@@ -13,10 +13,16 @@ body
     color: black
     font-family: "Helvetica Neue", "Helvetica", sans-serif //until I can find something better
 
-#time-and-date
+#right-container
     float: right
     text-align: right
     margin: 3rem 5rem 0 0
+
+#left-container
+    float: left
+    margin: 3rem 0 0 3rem
+
+#time-and-date
     #time
         font-size: $text-size-medium
         font-weight: 600
@@ -31,8 +37,6 @@ body
         font-weight: 400
 
 #weather
-    display: none
-    margin-top: 5rem
     #weather-temp
         font-size: $text-size-large
         font-weight: 900
@@ -42,19 +46,17 @@ body
         font-weight: 600
 
     #weather-highLow
+        margin-top: 0.5rem
         font-size: $text-size-small
-        font-weight: 600
-        margin-top: 1rem
+        font-weight: 400
 
 #news
-    display: none
-    margin-top: 5rem
-
+    margin-top: 3rem
     #news-title
         font-size: $text-size-small
-        font-weight: 300
+        font-weight: 600
     #news-ticker
-        margin-top: 1rem
+        margin-top: 0.5rem
         font-size: $text-size-tiny
-        font-weight: 300
+        font-weight: 400
         line-height: 2rem
