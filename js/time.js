@@ -30,7 +30,6 @@ function updateDate() {
     var date = d.getDate()
     var month = d.getMonth()
     var day = d.getDay()
-    console.log(day)
 
     var weekdayString = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     var monthString = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
