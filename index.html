@@ -1,19 +1,13 @@
 <head>
     <title>Digital Sign</title>
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+    <!--<meta http-equiv="refresh" content="60" >-->
 </head>
-<body 
-onload="
-    setInterval(updateClock(), 1000);
-    setInterval(updateDate(), 600000);
-    setInterval(updateWeather(), 600000);
-    setInterval(updateNews(), 1200000);
-">
-
+<body>
     <div id="container">
         <div id="right-container">
             <div id="time-and-date">
-                <div id="time">12:00<span class="meridian">AM</span></div>
+                <div id="time">--:--<span class="meridian">AM</span></div>
                 <div id="date">Monday, Jan 1</div>
             </div>
         </div>
@@ -36,4 +30,13 @@ onload="
     <script src="./js/time.js" type="text/javascript"></script>
     <script src="./js/weather.js" type="text/javascript"></script>
     <script src="./js/news.js" type="text/javascript"></script>
+
+    <script>
+        window.onload = function() {
+            setInterval(updateClock(), 500)
+            setInterval(updateDate(), 600000)
+            setInterval(updateWeather(), 600000)
+            setInterval(updateNews(), 1200000)
+        }
+    </script>
 </body>

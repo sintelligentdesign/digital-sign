@@ -2,7 +2,6 @@
 function updateClock() {
     var d = new Date()
     var hours = d.getHours()
-    console.log(hours)
     var minutes = d.getMinutes()
 
     if (hours == 0) {
