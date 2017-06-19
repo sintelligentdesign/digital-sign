@@ -73,7 +73,7 @@ body {
 
 /* line 16, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #container {
-  margin: 3rem 5rem 0 3rem;
+  margin: 3rem 8rem 0 3rem;
 }
 
 /* line 19, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
@@ -124,25 +124,20 @@ body {
 /* line 51, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news {
   margin-top: 3rem;
+  width: 60%;
 }
 
-/* line 53, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+/* line 54, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
 #news #news-title {
   font-size: 2.5rem;
   font-weight: 600;
 }
 
-/* line 57, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#news #news-items ul li {
+/* line 58, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
+#news #news-items div {
+  margin-top: 1rem;
   font-size: 1.3rem;
   font-weight: 400;
-  padding: 0;
-  margin: 0;
-}
-
-/* line 62, /Users/sharkthemepark/Desktop/Personal Work/digital-sign/sass/stylesheet.sass */
-#news #news-items ul li a {
-  display: none;
 }
 
 /*# sourceMappingURL=../css/stylesheet.map */
