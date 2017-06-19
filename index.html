@@ -4,24 +4,19 @@
 </head>
 <body 
 onload="
-    updateClock(); 
-    updateDate();
-    updateWeather();
-    updateNews();
-
     setInterval(updateClock(), 1000);
     setInterval(updateDate(), 600000);
     setInterval(updateWeather(), 600000);
     setInterval(updateNews(), 1200000);
 ">
-    <div id="right-container">
-        <div id="time-and-date">
-            <div id="time">12:00<span class="meridian">AM</span></div>
-            <div id="date">Monday, Jan 1</div>
-        </div>
-    </div>
 
-    <div id="left-container">
+    <div id="container">
+        <div id="right-container">
+            <div id="time-and-date">
+                <div id="time">12:00<span class="meridian">AM</span></div>
+                <div id="date">Monday, Jan 1</div>
+            </div>
+        </div>
         <div id="weather">
             <div id="weather-temp">--&deg;</div>
             <div id="weather-condition">clear</div>
@@ -30,7 +25,7 @@ onload="
 
         <div id="news">
             <div id="news-title">Top Stories</div>
-            <div id="news-items"></div>
+            <div id="news-items">Loading...</div>
         </div>
     </div>
 

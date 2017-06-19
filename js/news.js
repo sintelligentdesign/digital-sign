@@ -1,3 +1,4 @@
 function updateNews() {
-    $('#news-items').rss("http://feeds.arstechnica.com/arstechnica/index")
+    document.getElementById("news-items").innerText = ''
+    $('#news-items').rss("https://daringfireball.net/feeds/main")
 }
