@@ -1,7 +1,7 @@
 <head>
     <title>Digital Sign</title>
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
-    <!--<meta http-equiv="refresh" content="60" >-->
+    <meta http-equiv="refresh" content="60" >
 </head>
 <body>
     <div id="container">
@@ -32,11 +32,9 @@
     <script src="./js/news.js" type="text/javascript"></script>
 
     <script>
-        window.onload = function() {
-            setInterval(updateClock(), 500)
-            setInterval(updateDate(), 600000)
-            setInterval(updateWeather(), 600000)
-            setInterval(updateNews(), 1200000)
-        }
+        updateClock()
+        updateDate()
+        updateWeather()
+        updateNews()
     </script>
 </body>

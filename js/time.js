@@ -3,6 +3,7 @@ function updateClock() {
     var d = new Date()
     var hours = d.getHours()
     var minutes = d.getMinutes()
+    console.log(minutes)
 
     if (hours == 0) {
         var hoursString = 12
@@ -29,6 +30,7 @@ function updateDate() {
     var date = d.getDate()
     var month = d.getMonth()
     var day = d.getDay()
+    console.log(day)
 
     var weekdayString = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     var monthString = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
